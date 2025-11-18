@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Dashboard.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Depent be salee</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+<div class="maincontent">
+    <div class="leftcontent">
+        <ul type="none">
+            <li><a href="#">Dashboard</a>
+            <li><a href="#">list group</a>
+            <li><a href="#">users</a>
+            <li><a href="#">products</a>
+            <li><a href="#">sales</a>
+            <li><a href="#">Reports</a>
+            <li><a href="#">Settings</a>
+        </ul>
+    </div>
+
+    <div class="rightcontent">
+        <h1>Dashboard content5</h1>
+        <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 g-4">
+
+             <div class="col">
+                <div class="p-3" style="background-color: rgb(84, 84, 255); height: 7rem;"><h4>Users</h4><p>1250</p></div>
+            </div>
+            <div class="col">
+                <div class="p-3" style="background-color: rgb(49, 252, 49); height: 7rem;"><h4>Sales</h4><p>450</p></div>
+            </div>
+            <div class="col">
+                <div class="p-3" style="background-color: rgb(241, 160, 11); height: 7rem;"><h4>Revenue</h4><p>12,340</p></div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="graph">
+        <img src="data:image/png;base64,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" width="50%">
+        
+    </div>
+
+
+
+    </div>
+
+    
+  
+
+  
+</div>
+
+
+<br>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>    
+</body>
+</html>

@@ -1,0 +1,224 @@
+.navbar{
+    background-color: rgb(28, 28, 76);
+}
+.navbar h1{
+    color: white;
+}
+body{
+    background-color: lightgray;
+}
+
+
+/* left section */
+h3{
+    padding: 1rem;
+}
+.left-content{
+    background-color: white;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    row-gap: 1.25rem;
+    /* height: 35rem; */
+}
+
+
+/* leftcontent button */
+#b1 {
+    display: block;
+    margin: 0 auto;   /* centers horizontally */
+    background-color: rgb(0, 153, 255);
+    color: white;
+}
+
+
+/* right section */
+.right-content{
+    background-color: white;
+    row-gap: 1.25rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    /* height: 35rem; */
+}
+
+.container{
+    margin-bottom: 2rem;
+}
+
+.stud-name{
+    background-color: lightgray;
+    
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 2rem;
+}
+
+.c1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    
+}
+
+/* student details */
+.stud-details{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.25fr;
+    grid-template-rows: auto auto auto;
+    background-color: white;
+    /* margin-left: 2rem;
+    margin-right: 2rem; */
+}
+
+#b2{
+    background-color: bisque;
+
+}
+
+#b3{
+    background-color: rgb(60, 184, 225);
+}
+.last{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.l-content{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.r-content{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+/* ---------- Large Phones (<768px) ---------- */
+@media(max-width: 768px){
+
+    .navbar-brand {
+        width: 100%;
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .main {
+        grid-template-columns: 1fr; /* stack all sections */
+       
+    }
+    .main .r-content{
+         margin-left: 2rem;
+    }
+
+    .last {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+/* ---------- Small Phones (<480px) ---------- */
+/* ---------- Small Phones (max-width: 425px) ---------- */
+@media (max-width:425px){
+
+    /* Fix navbar padding + center title */
+    .navbar,
+    .navbar .container-fluid {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .navbar-brand {
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;   /* smaller */
+    }
+
+    /* Stack both left & right sections vertically */
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .left-content,
+    .right-content {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 1rem;
+    }
+
+    /* Student List items */
+    .stud-name {
+        padding: 0.5rem;
+    }
+
+    .stud-name h4 {
+        font-size: 1rem;
+    }
+
+    .stud-name p {
+        font-size: 0.8rem;
+    }
+
+    /* Student Details Section */
+    .stud-details {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .main {
+        grid-template-columns: 1fr;  /* stack everything */
+        gap: 0.5rem;
+    }
+
+    .l-content,
+    .r-content {
+        margin-left: 2rem;
+    }
+
+    .last {
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.5rem;
+        margin: 1rem 0;
+    }
+
+    #b2, #b3 {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    /* Overall text smaller */
+    h3 {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+
+
+
+

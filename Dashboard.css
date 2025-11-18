@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+}
+
+.maincontent {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: auto auto;
+}
+
+.col{
+  text-align: center;
+}
+
+p{
+  border: 1px solid black;
+  height: 40px;
+  width: 70px;
+  padding: 5px 10px 5px 10px;
+  margin-left: 140px;
+
+}
+.leftcontent {
+  height: 100vh;
+  background-color: black;
+}
+
+.leftcontent a {
+  text-decoration: none;
+  color: white;
+}
+
+/* .rightcontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+} */
+.cls{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.graph img{
+    background-size: cover;
+}
+
+
+
+p {
+  border: 1px solid black;
+  padding: 8px 12px;
+  text-align: center;
+  margin: 10px auto;
+  width: 40%;
+  font-size: 1rem;
+}
+
+/* 📱 Small screens (phones) */
+@media (max-width: 576px) {
+  p {
+    width: 70%;
+    font-size: 0.8rem;
+  }
+}
+
+/* 💻 Medium screens (tablets) */
+@media (min-width: 577px) and (max-width: 992px) {
+  p {
+    width: 50%;
+    font-size: 0.9rem;
+  }
+}
+
+/* 🖥️ Large screens (desktops) */
+@media (min-width: 993px) {
+  p {
+    width: 30%;
+    font-size: 1rem;
+  }
+}
+

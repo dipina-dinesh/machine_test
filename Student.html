@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Student.css">
+</head>
+<body>
+
+<!-- navbar -->
+<nav class="navbar sticky-top">
+  <div class="container-fluid">
+    <h1 class="navbar-brand">Student Dashboard</h1>
+  </div>
+</nav>
+<br>
+
+<!-- card section -->
+<div class="cards">
+
+    <!-- left section -->
+    <div class="left-content">
+        <h3 style="background-color: rgb(173, 216, 230); color: black;">Add Student Form</h3>
+
+        <form>
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Name">
+            </div>
+
+            <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Email">
+            </div>
+
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="ID">
+            </div>
+
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Major">
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="b1">Add Student</button>
+        </form><br><br>
+    </div>
+
+    <!-- right section -->
+    <div class="right-content">
+        <h3 style="background-color: rgb(144, 238, 144); color: black;">Student List</h3>
+
+        <div class="container">
+
+            <p>console.log: StudentCard re-rendered</p>
+            <div class="stud-name">
+                <div class="c1">
+                    <div class="name">
+                        <h4>Alice Smith</h4>
+                        <p>Alice.Smith@university.edu</p>
+                    </div>
+                    <div class="icons">
+                        <div class="first-row">
+                            <i class="fa-regular fa-square-check"></i>
+                            <i class="fa-solid fa-gift"></i>
+                        </div>
+                        <div class="second-row">
+                            <i class="fa-solid fa-trash"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p>console.log: StudentCard re-rendered</p>
+            <div class="stud-name">
+                <div class="c1">
+                    <div class="name">
+                        <h4>Bob Johnson</h4>
+                        <p>Bob.Johnson@university.edu</p>
+                    </div>
+                    <div class="icons">
+                        <div class="first-row">
+                            <i class="fa-regular fa-square-check"></i>
+                            <i class="fa-solid fa-gift"></i>
+                        </div>
+                        <div class="second-row">
+                            <i class="fa-solid fa-trash"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p>console.log: StudentCard re-rendered</p>
+            <div class="stud-name">
+                <div class="c1">
+                    <div class="name">
+                        <h4>Charlie Brown</h4>
+                        <p>Charlie.Brown@university.edu</p>
+                    </div>
+                    <div class="icons">
+                        <div class="first-row">
+                            <i class="fa-regular fa-square-check"></i>
+                            <i class="fa-solid fa-gift"></i>
+                        </div>
+                        <div class="second-row">
+                            <i class="fa-solid fa-trash"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <p>console.log: StudentCard re-rendered</p>
+            <div class="stud-name">
+                <div class="c1">
+                    <div class="name">
+                        <h4>Charlie Brown</h4>
+                        <p>Charlie.Brown@university.edu</p>
+                    </div>
+                    <div class="icons">
+                        <div class="first-row">
+                            <i class="fa-regular fa-square-check"></i>
+                            <i class="fa-solid fa-gift"></i>
+                        </div>
+                        <div class="second-row">
+                            <i class="fa-solid fa-trash"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- container end -->
+    </div> <!-- right-content end -->
+
+</div> <!-- cards end -->
+
+<!-- student details -->
+<div class="stud-details">
+    <h3 style="background-color: bisque;">Student Details</h3>
+
+    <div class="main">
+
+        <div class="l-content">
+            <p>console log: StudentCard re-entered</p>
+            <h6>ID: 123</h6>
+            <h6>Name: Alice Smith</h6>
+            <h6>Major: Computer Science</h6>
+            <h6>GPA: 3.8</h6>
+        </div>
+
+        <div class="r-content">
+            <h6>Honors</h6>
+            <h6>alice.smith@university.edu</h6>
+            <h6>Bejpr</h6>
+            <h6>3.8</h6>
+        </div>
+
+        <div class="last">
+            <button id="b2">Update</button>
+            <button id="b3">Delete</button>
+        </div>
+
+    </div><!-- main -->
+</div><!-- stud-details -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
