@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cardContent{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 2.5rem;
+            
+        }
+        .cardCustom{
+            /* background-color: lightblue; */
+            border: 1px solid black;
+            text-align: center;
+            border-radius: 1rem;
+        }
+        img{
+            margin-top: 1.5rem;
+        }
+        .completed{
+            background-color: rgb(18, 218, 18);
+        }
+
+        .pending{
+            background-color: rgb(255, 8, 8);
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="cardContent" id="cardContainer">
+
+        </div>
+    </div>
+ <script>
+
+    fetch("https://jsonplaceholder.typicode.com/todos")
+    .then(response=>response.json())
+    .then(data=>{
+        const cardContainer=document.getElementById("cardContainer");
+        cardContainer.innerHTML=data.slice(0,10).map(todo=>`
+        <div class="cardCustom ${todo.completed? 'completed': 'pending'}">
+                    <img src="https://sp.yimg.com/ib/th/id/OIP.-bgUD6TvLX3d2eFG6lU3PgHaHa?pid=Api&w=148&h=148&c=7&dpr=2&rs=1">
+                    <h2>${todo.title}</h2> 
+                    <h4>
+                        <strong>Status: </strong>${todo.completed? 'completed':'pending'}<br>
+                    </h4>   
+                </div>
+
+        
+        
+        
+        `).join("");
+    })
+    .catch(error=>"error",error);
+
+
+
+
+
+
+
+
+
+ </script>   
+</body>
+</html>
